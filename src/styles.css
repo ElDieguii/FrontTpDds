@@ -1,0 +1,6 @@
+:root{
+    --colorPrincipal: #789DFF;
+    background-image: url("./img/mainBackground.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+};

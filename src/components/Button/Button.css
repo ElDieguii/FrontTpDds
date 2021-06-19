@@ -1,0 +1,18 @@
+.button{
+    text-decoration: none;
+    width: 50%;
+    padding: 1em 1.5em;
+    background: grey;
+    border-radius: 0.3em;
+    margin: 10%;
+    color: white;
+    transition: transform 400ms ease;
+}
+
+.button:hover{
+    background-color: white;
+    border: 2px solid grey;
+    color: grey;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
