@@ -16,7 +16,6 @@ function Alert(props) {
 
 export const Login = (props) => {
 
-    const Auth = React.useContext(AuthApi)
     const [user, setUser] = useState('')
     const messageInitial = props.location ? props.location.state.message : ''
     const [message, setMessage] =  useState(messageInitial)
@@ -49,7 +48,7 @@ export const Login = (props) => {
             const url = `http://localhost:8080/auth/loggin`
         if(tiempoDeEspera<=new Date().getMinutes()){
             setLoading(true)
-            axios.get(url, 
+            axios.post(url, 
                 {
                     nombreDeUsuario:usuario,
                     contrasenia:contrasenia

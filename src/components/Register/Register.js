@@ -46,6 +46,7 @@ export const Register = (props) => {
             const datosUsuario={
                 nombreDeUsuario: event.target[0].value,
                 contrasenia: event.target[1].value,
+                esAdmin:switched
             }
     
             const url = `http://localhost:8080/auth/registro`
